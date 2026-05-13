@@ -71,7 +71,7 @@ function BookingsPage() {
                   <input
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
-                    placeholder="MTT-1056 or 9876543210"
+                    placeholder="MTT-1056 or 8169730810"
                     className="mt-1.5 w-full h-12 px-3 rounded-lg bg-soft border border-border focus:border-brand outline-none text-sm"
                   />
                 </label>
@@ -147,13 +147,13 @@ function BookingsPage() {
                     </div>
                     <div className="mt-4 grid grid-cols-2 gap-3">
                       <a
-                        href="tel:+919876543210"
+                        href="tel:+919821790471"
                         className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg border border-navy text-navy text-sm font-medium hover:bg-navy hover:text-navy-foreground transition"
                       >
                         <Phone className="h-4 w-4" /> Call Driver
                       </a>
                       <a
-                        href="https://wa.me/919876543210"
+                        href="https://wa.me/918169730810"
                         target="_blank" rel="noreferrer"
                         className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-[#25D366] text-white text-sm font-medium hover:opacity-90 transition"
                       >

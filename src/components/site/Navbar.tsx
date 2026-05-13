@@ -55,11 +55,11 @@ export function Navbar() {
         </nav>
         <div className="hidden lg:flex items-center gap-3">
           <a
-            href="tel:+919876543210"
+            href="tel:+919821790471"
             className="flex items-center gap-1.5 text-sm text-brand-light hover:text-white transition"
           >
             <Phone className="h-4 w-4" />
-            <span className="font-medium">+91 98765 43210</span>
+            <span className="font-medium">+91 98217 90471</span>
           </a>
           <button className="px-4 py-2 text-sm rounded-md border border-white/40 hover:bg-white/10 transition">
             Login / Sign Up
