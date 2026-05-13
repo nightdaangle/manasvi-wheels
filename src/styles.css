@@ -155,6 +155,10 @@
 }
 .lift:hover { transform: translateY(-6px); box-shadow: 0 24px 40px -20px rgb(0 0 0 / 0.25); }
 
+/* Hide scrollbar visually for snap rows */
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+
 @media (prefers-reduced-motion: reduce) {
   .reveal-up, .reveal-left, .reveal-right, .reveal-zoom, .reveal-fade {
     opacity: 1; transform: none; transition: none;

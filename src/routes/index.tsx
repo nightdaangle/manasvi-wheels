@@ -17,16 +17,45 @@ import { Reveal } from "@/components/site/Reveal";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Manasvi Tours and Travels — Self Drive Car Rental from ₹999/day" },
+      { title: "Manasvi Tours and Travels | Outstation Cabs Maharashtra" },
       {
         name: "description",
         content:
-          "Rent self-drive & chauffeur cars across Maharashtra. Zero deposit, unlimited km, doorstep delivery. Book in minutes with Manasvi Tours and Travels.",
+          "Book chauffeur-driven outstation cabs and tour packages across Maharashtra. Innova Crysta, Urbania, Sedan & more from ₹14/km. Call 9821790471.",
       },
-      { property: "og:title", content: "Manasvi Tours and Travels — Car Rental" },
+      {
+        name: "keywords",
+        content:
+          "outstation cabs Maharashtra, Innova Crysta hire, Urbania Force Traveller, Mumbai Pune cab, tour packages Maharashtra, Manasvi Tours and Travels, chauffeur driven cabs",
+      },
+      { name: "robots", content: "index,follow" },
+      { property: "og:title", content: "Manasvi Tours and Travels | Outstation Cabs Maharashtra" },
       {
         property: "og:description",
-        content: "Self-drive & chauffeur cars from ₹999/day. Zero deposit. Doorstep delivery.",
+        content:
+          "Chauffeur-driven outstation cabs & curated tour packages across Maharashtra. From ₹14/km. Zero hidden charges.",
+      },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://manasvi-drive-hub.lovable.app/" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Manasvi Tours and Travels | Outstation Cabs Maharashtra" },
+      { name: "twitter:description", content: "Outstation cabs & tour packages across Maharashtra from ₹14/km." },
+    ],
+    links: [{ rel: "canonical", href: "https://manasvi-drive-hub.lovable.app/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: "Manasvi Tours and Travels",
+          description: "Chauffeur-driven outstation cabs and curated tour packages across Maharashtra.",
+          url: "https://manasvi-drive-hub.lovable.app/",
+          telephone: ["+91-98217-90471", "+91-81697-30810"],
+          priceRange: "₹14–₹32/km",
+          areaServed: { "@type": "State", name: "Maharashtra" },
+          address: { "@type": "PostalAddress", addressRegion: "Maharashtra", addressCountry: "IN" },
+        }),
       },
     ],
   }),

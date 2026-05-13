@@ -152,7 +152,7 @@ function CustomPackageForm() {
     const msg = encodeURIComponent(
       `Hi Manasvi Tours!%0A%0AName: ${name}%0AWhatsApp: ${phone}%0ADestination: ${destination}%0ADate: ${date}%0A%0APlease share a custom package quote.`
     );
-    window.open(`https://wa.me/919876543210?text=${msg}`, "_blank");
+    window.open(`https://wa.me/918169730810?text=${msg}`, "_blank");
   };
   return (
     <form
@@ -160,7 +160,7 @@ function CustomPackageForm() {
       className="bg-white/10 border border-white/20 backdrop-blur-sm rounded-2xl p-5 sm:p-8 grid grid-cols-1 sm:grid-cols-2 gap-4"
     >
       <Input label="Name" placeholder="Your full name" value={name} onChange={(e) => setName(e.target.value)} required />
-      <Input label="WhatsApp Number" placeholder="+91 9876543210" type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} required />
+      <Input label="WhatsApp Number" placeholder="+91 8169730810" type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} required />
       <Input label="Destination" placeholder="Konkan / Goa / Open" value={destination} onChange={(e) => setDestination(e.target.value)} required />
       <Input label="Travel Date" type="date" value={date} onChange={(e) => setDate(e.target.value)} required />
       <button

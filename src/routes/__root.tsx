@@ -1,6 +1,4 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
-import { AppSidebar } from "@/components/site/AppSidebar";
 import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
 import { BackToTop } from "@/components/site/BackToTop";
 
@@ -33,20 +31,13 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { name: "author", content: "Manasvi Tours and Travels" },
+      { property: "og:site_name", content: "Manasvi Tours and Travels" },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
+      { rel: "stylesheet", href: appCss },
     ],
   }),
   shellComponent: RootShell,
@@ -70,18 +61,10 @@ function RootShell({ children }: { children: React.ReactNode }) {
 
 function RootComponent() {
   return (
-    <SidebarProvider defaultOpen={false}>
-      <div className="flex w-full min-h-screen">
-        <AppSidebar />
-        <div className="flex-1 min-w-0">
-          <div className="hidden lg:block fixed left-2 top-20 z-40">
-            <SidebarTrigger className="bg-navy text-navy-foreground hover:bg-navy/90" />
-          </div>
-          <Outlet />
-          <FloatingWhatsApp />
-          <BackToTop />
-        </div>
-      </div>
-    </SidebarProvider>
+    <div className="min-h-screen w-full">
+      <Outlet />
+      <FloatingWhatsApp />
+      <BackToTop />
+    </div>
   );
 }

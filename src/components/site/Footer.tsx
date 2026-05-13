@@ -7,7 +7,7 @@ export function Footer() {
     e.preventDefault();
     if (!phone.trim()) return;
     const msg = encodeURIComponent(`Hi! Please add ${phone} to WhatsApp deal alerts.`);
-    window.open(`https://wa.me/919876543210?text=${msg}`, "_blank");
+    window.open(`https://wa.me/918169730810?text=${msg}`, "_blank");
   };
 
   return (
@@ -24,7 +24,7 @@ export function Footer() {
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               type="tel"
-              placeholder="+91 9876543210"
+              placeholder="+91 8169730810"
               className="flex-1 md:w-64 h-11 px-3 rounded-lg bg-white/10 border border-white/30 placeholder:text-white/50 outline-none focus:border-brand-light text-sm"
             />
             <button
@@ -66,11 +66,12 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Contact Us</h4>
             <ul className="space-y-3 text-sm text-white/80">
-              <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-brand-light shrink-0" /><span>+91 98765 43210</span></li>
+              <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-brand-light shrink-0" /><a href="tel:+919821790471" className="hover:text-brand-light">Call: 9821790471</a></li>
+              <li className="flex items-center gap-2"><MessageCircle className="h-4 w-4 text-brand-light shrink-0" /><a href="https://wa.me/918169730810" target="_blank" rel="noreferrer" className="hover:text-brand-light">WhatsApp: 8169730810</a></li>
               <li className="flex items-center gap-2 break-all"><Mail className="h-4 w-4 text-brand-light shrink-0" /><span>hello@manasvitours.com</span></li>
             </ul>
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/918169730810"
               target="_blank" rel="noreferrer"
               className="mt-4 inline-flex w-full sm:w-auto items-center justify-center gap-2 px-4 py-2 rounded-md bg-green-600 hover:bg-green-500 text-white text-sm font-medium transition"
             >
