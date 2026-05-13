@@ -41,8 +41,8 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 bg-navy text-navy-foreground transition-shadow ${
-        scrolled ? "shadow-lg shadow-black/20" : ""
+      className={`fixed top-0 inset-x-0 z-50 text-navy-foreground transition-all duration-300 ${
+        scrolled ? "bg-navy shadow-lg shadow-black/20" : "bg-navy/30 backdrop-blur-sm"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
